@@ -4,22 +4,21 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-Halo {}
+hello {}
 
-Selamat datang {}
+Welcome {}
 
-Jika kamu tidak percaya bot ini, 
-1) gausah baca pesan ini
-2) blokir bot atau delete chat
+If you don't trust this bot,
+1) don't read this message
+2) block bot or delete chat
 
-Bot ini Bekerja Untuk Membantu Kamu Mendapatkan String Session Via Bot. Rekomendasi Jika Ingin Mengambil String Gunakan Akun Lain, Agar Tidak Delay. Terimakasih
-By @fckualot
+This Bot Works To Help You Get Session String Via Bot. Recommendations If You Want To Take String Use Another Account, So As Not To Delay. Thank you
     """
 
     # Home Button
     home_buttons = [
         [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton(text="🏠 Kembali 🏠", callback_data="home")]
+        [InlineKeyboardButton(text="🏠 Home 🏠", callback_data="home")]
     ]
 
     generate_button = [
@@ -29,37 +28,35 @@ By @fckualot
     # Rest Buttons
     buttons = [
         [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton("✨ Maintaned By ✨", url="https://t.me/fckualot")],
+        [InlineKeyboardButton("✨ Maintaned By ✨", url="https://t.me/tamilvip007")],
         [
-            InlineKeyboardButton("Cara Menggunakan Saya ❔", callback_data="help"),
+            InlineKeyboardButton("How to use me ❔", callback_data="help"),
             InlineKeyboardButton("🎪 About 🎪", callback_data="about")
         ],
-        [InlineKeyboardButton("♥ Info Bot Lain ♥", url="https://t.me/rioprojects")],
+        [InlineKeyboardButton("DEV", url="https://t.me/tamilvip007")],
     ]
 
     # Help Message
     HELP = """
 ✨ **Available Commands** ✨
 
-/about - Tentang Bot ini
+/about - About this Bot
 /help - This Message
-/start - Mulai Bot
-/generate - Mulai Generating Session
-/cancel - Membatalkan process
-/restart - Membatalkan process
+/start - Start Bot
+/generate - Start Generating Session
+/cancel - Cancels process
+/restart - Abort the process‌‌
 """
 
     # About Message
     ABOUT = """
 **About This Bot** 
 
-Sebuah telegram bot untuk mengambil pyrogram dan telethon string session by @stringriobot
+A telegram bot to retrieve pyrograms and telethon string sessions
 
-Group Support : [Gabung](https://t.me/riogroupsupport)
+ Support : [DEV](https://t.me/tamilvip007)
 
 Framework : [Pyrogram](docs.pyrogram.org)
 
 Language : [Python](www.python.org)
-
-Developer : @fckualot
     """
