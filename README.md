@@ -19,7 +19,7 @@ Telegram bot to generate pyrogram and telethon string session.
 3. After deploying is complete, tap on "Manage App"
 4. Check the logs to see if your bot is ready!
 
-### Local Deploying
+### Local Deploying..
 
 1. Clone the repo
    ```markdown
