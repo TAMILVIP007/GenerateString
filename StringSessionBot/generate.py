@@ -41,15 +41,15 @@ async def main(_, msg):
 async def generate_session(bot, msg, telethon=False):
     await msg.reply("Starting {} Session Generation...‌".format("Telethon" if telethon else "Pyrogram"))
     user_id = msg.chat.id
-    api_id_msg = await bot.ask(user_id, 'please send' `API_ID`', filters=filters.text)
+    api_id_msg = await bot.ask(user_id, 'please send `API_ID`', filters=filters.text)
     if await cancelled(api_id_msg):
         return
     try:
         api_id = int(api_id_msg.text)
     except ValueError:
-        await api_id_msg.reply('Not true' API_ID (which must be an integer). Please start generating session again.', quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
+        await api_id_msg.reply('Not true API_ID (which must be an integer). Please start generating session again.', quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
-    api_hash_msg = await bot.ask(user_id, 'please send' `API_HASH`', filters=filters.text)
+    api_hash_msg = await bot.ask(user_id, 'please send `API_HASH`', filters=filters.text)
     if await cancelled(api_id_msg):
         return
     api_hash = api_hash_msg.text
