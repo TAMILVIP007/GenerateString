@@ -1,8 +1,6 @@
 import os
 
-ENVIRONMENT = os.environ.get('ENVIRONMENT', False)
-
-if ENVIRONMENT:
+if ENVIRONMENT := os.environ.get('ENVIRONMENT', False):
     try:
         API_ID = int(os.environ.get('API_ID', 0))
     except ValueError:
